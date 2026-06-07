@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina — アイデアを形に</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">Lumina</a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#features">機能</a></li>
+        <li><a href="#howto">使い方</a></li>
+        <li><a href="#pricing">料金</a></li>
+        <li><a href="#contact" class="btn btn--sm">お問い合わせ</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="メニュー">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="container">
+      <div class="hero__content">
+        <span class="badge">🚀 新登場</span>
+        <h1 class="hero__title">アイデアを、<br><em>もっと速く</em>形に。</h1>
+        <p class="hero__sub">Luminaはチームの創造力を最大化するプラットフォーム。<br>企画からリリースまで、すべてを一か所で管理できます。</p>
+        <div class="hero__cta">
+          <a href="#" class="btn btn--primary">無料で始める</a>
+          <a href="#howto" class="btn btn--ghost">使い方を見る</a>
+        </div>
+        <p class="hero__note">クレジットカード不要 · 14日間無料トライアル</p>
+      </div>
+      <div class="hero__visual">
+        <div class="mockup">
+          <div class="mockup__bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="mockup__body">
+            <div class="mockup__card mockup__card--1 fade-card">
+              <div class="mockup__icon">📌</div>
+              <div class="mockup__text">
+                <div class="mockup__line"></div>
+                <div class="mockup__line mockup__line--short"></div>
+              </div>
+            </div>
+            <div class="mockup__card mockup__card--2 fade-card">
+              <div class="mockup__icon">✅</div>
+              <div class="mockup__text">
+                <div class="mockup__line"></div>
+                <div class="mockup__line mockup__line--mid"></div>
+              </div>
+            </div>
+            <div class="mockup__card mockup__card--3 fade-card">
+              <div class="mockup__icon">📊</div>
+              <div class="mockup__text">
+                <div class="mockup__line"></div>
+                <div class="mockup__line mockup__line--short"></div>
+              </div>
+            </div>
+            <div class="mockup__progress">
+              <div class="mockup__progress-label">進捗</div>
+              <div class="mockup__progress-bar">
+                <div class="mockup__progress-fill" id="progressFill"></div>
+              </div>
+              <div class="mockup__progress-value" id="progressValue">0%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat" data-count="12000">
+          <span class="stat__num" data-target="12000">0</span>
+          <span class="stat__unit">+</span>
+          <p class="stat__label">利用チーム数</p>
+        </div>
+        <div class="stat" data-count="98">
+          <span class="stat__num" data-target="98">0</span>
+          <span class="stat__unit">%</span>
+          <p class="stat__label">顧客満足度</p>
+        </div>
+        <div class="stat" data-count="3">
+          <span class="stat__num" data-target="3">0</span>
+          <span class="stat__unit">倍</span>
+          <p class="stat__label">生産性向上</p>
+        </div>
+        <div class="stat" data-count="24">
+          <span class="stat__num" data-target="24">0</span>
+          <span class="stat__unit">/7</span>
+          <p class="stat__label">サポート対応</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">機能</span>
+        <h2>チームを加速する<br>すべての機能が揃っています</h2>
+        <p>小規模チームから大企業まで、スケールに応じた機能を提供します。</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">⚡</div>
+          <h3>リアルタイム同期</h3>
+          <p>チームメンバーの変更が即座に反映。コンフリクト知らずのコラボレーション。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">🔒</div>
+          <h3>エンタープライズセキュリティ</h3>
+          <p>SOC 2 Type II準拠。データは常に暗号化され、安全に管理されます。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">🔗</div>
+          <h3>100以上の連携</h3>
+          <p>Slack、GitHub、Figmaなど、すでに使っているツールとシームレスに統合。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">📈</div>
+          <h3>詳細なアナリティクス</h3>
+          <p>プロジェクトの進捗をリアルタイムで可視化。ボトルネックを即座に特定。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">🤖</div>
+          <h3>AIアシスタント</h3>
+          <p>タスクの自動分類、期日予測、優先度提案をAIがサポートします。</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">📱</div>
+          <h3>モバイル対応</h3>
+          <p>iOS・Androidアプリで、どこからでもプロジェクトにアクセス可能。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How To -->
+  <section class="howto" id="howto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">使い方</span>
+        <h2>3ステップで<br>すぐに始められます</h2>
+      </div>
+      <div class="howto__steps">
+        <div class="step reveal">
+          <div class="step__num">01</div>
+          <div class="step__content">
+            <h3>アカウント作成</h3>
+            <p>メールアドレスだけで登録完了。設定は1分以内に終わります。</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step reveal">
+          <div class="step__num">02</div>
+          <div class="step__content">
+            <h3>チームを招待</h3>
+            <p>招待リンクを送るだけ。メンバーはすぐにプロジェクトに参加できます。</p>
+          </div>
+        </div>
+        <div class="step__connector"></div>
+        <div class="step reveal">
+          <div class="step__num">03</div>
+          <div class="step__content">
+            <h3>プロジェクト開始</h3>
+            <p>テンプレートから選ぶか、ゼロから作成。今日からチームで動き始めましょう。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">料金</span>
+        <h2>シンプルな<br>料金プラン</h2>
+        <p>すべてのプランに14日間の無料トライアル付き。</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing-card reveal">
+          <div class="pricing-card__name">スターター</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">¥</span>0
+          </div>
+          <div class="pricing-card__period">永久無料</div>
+          <ul class="pricing-card__features">
+            <li>✓ 最大5名</li>
+            <li>✓ 3プロジェクトまで</li>
+            <li>✓ 基本機能</li>
+            <li>✓ コミュニティサポート</li>
+          </ul>
+          <a href="#" class="btn btn--outline">無料で始める</a>
+        </div>
+        <div class="pricing-card pricing-card--featured reveal">
+          <div class="pricing-card__badge">人気</div>
+          <div class="pricing-card__name">プロ</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__currency">¥</span>2,980
+          </div>
+          <div class="pricing-card__period">/ 月 · 1名あたり</div>
+          <ul class="pricing-card__features">
+            <li>✓ 無制限メンバー</li>
+            <li>✓ 無制限プロジェクト</li>
+            <li>✓ AIアシスタント</li>
+            <li>✓ 優先サポート</li>
+          </ul>
+          <a href="#" class="btn btn--primary">14日間無料で試す</a>
+        </div>
+        <div class="pricing-card reveal">
+          <div class="pricing-card__name">エンタープライズ</div>
+          <div class="pricing-card__price">
+            <span class="pricing-card__price-custom">お問い合わせ</span>
+          </div>
+          <div class="pricing-card__period">&nbsp;</div>
+          <ul class="pricing-card__features">
+            <li>✓ カスタム契約</li>
+            <li>✓ SLA保証</li>
+            <li>✓ 専任サポート</li>
+            <li>✓ オンボーディング支援</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">営業に連絡</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section class="cta" id="contact">
+    <div class="container">
+      <div class="cta__inner reveal">
+        <h2>さあ、始めましょう。</h2>
+        <p>今日から14日間、すべての機能を無料で体験できます。</p>
+        <form class="cta__form" id="ctaForm">
+          <input type="email" class="cta__input" placeholder="メールアドレスを入力" required>
+          <button type="submit" class="btn btn--primary">無料で試す</button>
+        </form>
+        <p class="cta__note" id="ctaNote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo">Lumina</a>
+          <p>アイデアを形にする<br>チームのためのプラットフォーム。</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>プロダクト</h4>
+            <a href="#">機能</a>
+            <a href="#">料金</a>
+            <a href="#">ロードマップ</a>
+          </div>
+          <div class="footer__col">
+            <h4>会社</h4>
+            <a href="#">私たちについて</a>
+            <a href="#">採用情報</a>
+            <a href="#">ブログ</a>
+          </div>
+          <div class="footer__col">
+            <h4>サポート</h4>
+            <a href="#">ヘルプセンター</a>
+            <a href="#">お問い合わせ</a>
+            <a href="#">プライバシー</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2026 Lumina. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
